@@ -1,0 +1,74 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#frame {
+    border: solid 6px black;
+    border-radius: 16px;
+    background-color: grey;
+    width: 400px;
+    height: 550px;
+    padding: 16px;
+}
+
+.cell {
+    display: flex;
+    margin: 4px;
+    background-color: lightgrey;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.cell:active {
+    transform: scale(1.1);
+}
+
+.number:active {
+    background-color: whitesmoke;
+}
+
+.action:active{
+    background-color: aquamarine;
+}
+
+#screen:active {
+    transform: scale(1.0);
+}
+
+#equal:active{
+    background-color: greenyellow;
+}
+#upper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#screen {
+    text-align: end;
+    width: 400px;
+    height: 160px;
+
+}
+
+#clear {
+    background-color: lightblue;
+    width: 180px;
+    height: 60px;
+}
+
+#delete {
+    background-color: red;
+    width: 180px;
+    height: 60px;
+}
+
+#lower {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+}
