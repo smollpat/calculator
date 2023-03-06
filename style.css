@@ -1,8 +1,10 @@
 body {
+    font-family: "Rubik", sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:beige;
 }
 
 #frame {
@@ -10,7 +12,7 @@ body {
     border-radius: 16px;
     background-color: grey;
     width: 400px;
-    height: 550px;
+    height: 480px;
     padding: 16px;
 }
 
@@ -50,9 +52,15 @@ body {
 }
 
 #screen {
-    text-align: end;
+    display: flex;
+    background-color: #d9d9d9;
+    justify-content: end;
+    align-items: end;
+    font-size: 3em;
+    overflow: hidden;
     width: 400px;
-    height: 160px;
+    height: 4rem;
+    border-radius: initial;
 
 }
 
@@ -71,4 +79,13 @@ body {
 #lower {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
+}
+
+#refer {
+    text-align: center;
+    font-size: 1.25em;
+    position: relative;
+    bottom: -30px;
+    color: #200009;
+
 }
